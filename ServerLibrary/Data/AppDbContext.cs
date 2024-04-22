@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerLibrary.DataBase
+namespace ServerLibrary.Data
 {
     public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
@@ -21,5 +21,11 @@ namespace ServerLibrary.DataBase
         public DbSet<Town> Towns { get; set; }
 
         public DbSet<AppUser> AppUsers { get; set; }
+
+        public DbSet<UserRole> UserRoles { get; set; }
+
+        public DbSet<SystemRoles> SystemRoles { get; set; }
+
+        public DbSet<RefreshTokenInfo> RefreshTokenInfos { get; set; }
     }
 }

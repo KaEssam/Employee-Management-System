@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace BaseLibrary.Entites
 {
-    public class AppUser
+    public class RefreshTokenInfo
     {
         public int Id { get; set; }
 
-        public string? FullName { get; set; }
+        public string? Token { get; set; }
 
-        public string? Email { get; set; }
-
-        public string? Password { get; set; }
+        public int UserId { get; set; }
     }
 }
